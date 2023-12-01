@@ -21,7 +21,7 @@ function NewForm(props) {
 e.preventDefault()
 const costData={
   description:description,
-  price: price,
+  price: +price,
   date:new Date(date),
 }
 props.onSaveForm(costData)
@@ -66,7 +66,7 @@ const   cancelFormVisibleStatus = ()=>{
           />
         </div>
         <div className="new-cost__actions">
-          <button type="submit" > Add cost</button>
+          <button type="submit" disabled={!description || !price || !date} > Add cost</button>
           <button type="button" onClick={cancelFormVisibleStatus} > Cancel</button>
 
         </div>

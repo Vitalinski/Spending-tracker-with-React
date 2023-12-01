@@ -8,26 +8,32 @@ const [costs, setCosts] = useState ([
     id:1,
     date: new Date(2023, 2, 12),
     description: 'Freezer',
-    price:999
+    price:699
   },
   {
     id:2,
-    date: new Date(2021, 8, 1),
-    description: 'Freezer',
-    price:98
+    date: new Date(2023, 8, 1),
+    description: 'Mouse',
+    price:150
   },
   {
     id:3,
-    date: new Date(2022, 6, 11),
-    description: 'Freezer',
-    price:888
+    date: new Date(2023, 6, 11),
+    description: 'Oven',
+    price:488
   },
   {
     id:4,
-    date: new Date(2021, 6, 2),
-    description: 'Freezer',
-    price:25
-  }
+    date: new Date(2023, 4, 2),
+    description: 'Book',
+    price:85
+  },
+  {
+    id:5,
+    date: new Date(2023, 10, 12),
+    description: 'Phone',
+    price:399
+  },
 ])
 
 function addCost(cost){
